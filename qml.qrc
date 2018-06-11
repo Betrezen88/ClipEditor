@@ -4,5 +4,6 @@
         <file>qtquickcontrols2.conf</file>
         <file>PlaylistView.qml</file>
         <file>PlaylistUpperBar.qml</file>
+        <file>PlaylistDelegate.qml</file>
     </qresource>
 </RCC>

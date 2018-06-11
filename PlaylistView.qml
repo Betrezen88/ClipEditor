@@ -7,9 +7,9 @@ Item {
         id: model
 
         ListElement { label: "label1"; path: "img1" }
-        ListElement { label: "label1"; path: "img1" }
-        ListElement { label: "label1"; path: "img1" }
-        ListElement { label: "label1"; path: "img1" }
+        ListElement { label: "label2"; path: "img1" }
+        ListElement { label: "label3"; path: "img1" }
+        ListElement { label: "label4"; path: "img1" }
     }
 
     PlaylistUpperBar {
@@ -33,10 +33,9 @@ Item {
 
         model: model
 
-        delegate: Column {
-            spacing: 1
-            Text { text: path }
-            Text { text: label }
+        delegate: PlaylistDelegate {
+            playlistName: label
+            iconName: path
         }
     }
 }

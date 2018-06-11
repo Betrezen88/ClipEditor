@@ -4,11 +4,6 @@ import QtQuick.Controls 2.2
 Item {
     id: main
 
-    Rectangle {
-        anchors.fill: main
-        color: "yellow"
-    }
-
     Button {
         id: menuBtn
         text: "M"
