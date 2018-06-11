@@ -12,9 +12,7 @@ ApplicationWindow {
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
 
-        Rectangle {
-            color: "red"
-        }
+        PlaylistView{ }
 
         Rectangle {
             color: "blue"
@@ -26,7 +24,7 @@ ApplicationWindow {
         currentIndex: swipeView.currentIndex
 
         TabButton {
-            text: qsTr("Page 1")
+            text: qsTr("Playlists")
         }
         TabButton {
             text: qsTr("Page 2")

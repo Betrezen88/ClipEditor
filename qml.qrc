@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>PlaylistView.qml</file>
+        <file>PlaylistUpperBar.qml</file>
     </qresource>
 </RCC>
