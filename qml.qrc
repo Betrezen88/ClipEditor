@@ -6,5 +6,6 @@
         <file>PlaylistUpperBar.qml</file>
         <file>PlaylistDelegate.qml</file>
         <file>EditorView.qml</file>
+        <file>EditorTimeItem.qml</file>
     </qresource>
 </RCC>

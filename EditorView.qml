@@ -28,43 +28,11 @@ Item {
         }
     }
 
-    RangeSlider {
-        id: timeTrack
-        height: 50
-        from: 1
-        to: 100
-        first.value: 1
-        second.value: 100
+    EditorTimeItem {
+        id: timeItem
         anchors {
             top: clipName.bottom
             left: main.left
-            right: main.right
-        }
-    }
-
-    SpinBox {
-        id: startTime
-        value: timeTrack.first.value
-        anchors {
-            top: timeTrack.bottom
-            left: main.left
-        }
-    }
-
-    Label {
-        id: label
-        text: "Track time"
-        anchors {
-            top: timeTrack.bottom
-            left: startTime.right
-        }
-    }
-
-    SpinBox {
-        id: endTime
-        value: timeTrack.second.value
-        anchors {
-            top: timeTrack.bottom
             right: main.right
         }
     }
