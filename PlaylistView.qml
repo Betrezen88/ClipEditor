@@ -10,6 +10,9 @@ Item {
         ListElement { label: "label2"; path: "img1" }
         ListElement { label: "label3"; path: "img1" }
         ListElement { label: "label4"; path: "img1" }
+        ListElement { label: "label5"; path: "img1" }
+        ListElement { label: "label6"; path: "img1" }
+        ListElement { label: "label7"; path: "img1" }
     }
 
     PlaylistUpperBar {
@@ -30,12 +33,22 @@ Item {
             left: parent.left
             right: parent.right
         }
+        cellHeight: 50
 
         model: model
 
         delegate: PlaylistDelegate {
             playlistName: label
             iconName: path
+            height: 50
         }
+
+        onWidthChanged: {
+            if ( gridView.width <= 600 ) {
+                cellWidth = gridView.width / 2;
+            }
+            else if ( gridView.width >= 601 )
+                cellWidth = gridView.width / 4;
+            }
     }
 }

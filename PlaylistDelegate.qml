@@ -1,17 +1,13 @@
 import QtQuick 2.0
 
-Item {
+Rectangle {
     property string playlistName
     property string iconName
 
     id: main
-    width: 100
-    height: 50
-
-    Rectangle {
-        anchors.fill: parent
-        color: "gray"
-    }
+    color: "gray"
+    border.color: "white"
+    border.width: 2
 
     Row {
         anchors.fill: main
@@ -25,7 +21,7 @@ Item {
             }
         }
         Text {
-            text: playlistName
+            text: " " + playlistName
             anchors {
                 verticalCenter: parent.verticalCenter
             }
