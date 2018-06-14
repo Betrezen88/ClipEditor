@@ -12,11 +12,9 @@ ApplicationWindow {
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
 
-        PlaylistView{ }
+        PlaylistView { }
 
-        Rectangle {
-            color: "blue"
-        }
+        EditorView { }
     }
 
     footer: TabBar {
